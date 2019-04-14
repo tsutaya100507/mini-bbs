@@ -9,7 +9,7 @@
 		if ($_POST['email'] === '') {
 			$error['email'] = 'blank';
 		}
-		if (strlen($_POST['password'] > 4)) {
+		if (strlen($_POST['password'] < 4)) {
 			$error['password'] = 'length';
 		}
 		if ($_POST['password'] === '') {
